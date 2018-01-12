@@ -8,7 +8,7 @@ import es.Victor.Model.Videogame;
 
 public class VideogameAssembler {
 
-	public static Videogame assembleVideoGameFrom(HttpServletRequest request) {
+	public static Videogame assembleVideogameFrom(HttpServletRequest request) {
 
 		Videogame videogame = new Videogame();
 		videogame.setTitle(request.getParameter("Title"));

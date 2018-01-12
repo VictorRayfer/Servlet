@@ -6,15 +6,13 @@ import es.Victor.Model.Console;
 
 public class ConsoleAssembler {
 
-	public static Console assembleUserFrom(HttpServletRequest request) {
+	public static Console assembleConsoleFrom(HttpServletRequest request) {
 		
 		Console console = new Console();
 		
-		String cod = request.getParameter("CodCompany");
-		Integer z = Integer.parseInt(cod);
-		
-		console.setName(request.getParameter("Name")); 
-		console.setCodCompany(z);
+		int cod = Integer.parseInt(request.getParameter("CodCompany"));
+		console.setName(request.getParameter("Name"));
+		console.setCodCompany(cod);
 		return console;
 	}
 }
