@@ -4,15 +4,15 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Alta Consola</title>
+<title>Register Console</title>
 </head>
 <body>
-	<form>
+	<form action="console" method="post">
 		<span>Name:</span> 
 		<input type="text" name="Name"/> <br/>
 		<span>CodCompany:</span> 
 		<input type="text" name="CodCompany"/><br/>
 		<input type="submit"/>
-	</form>
+</form>
 </body>
 </html>

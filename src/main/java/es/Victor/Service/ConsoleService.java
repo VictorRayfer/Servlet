@@ -1,5 +1,7 @@
 package es.Victor.Service;
 
+import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
 
 import es.Victor.Assembler.ConsoleAssembler;
@@ -24,6 +26,11 @@ public class ConsoleService {
 		}
 	}
 
+	public List<Console> listAllConsole(){
+		return repository.searchAll();
+		
+	}
+	
 	public ConsoleRepository getRepository() {
 		return repository;
 	}

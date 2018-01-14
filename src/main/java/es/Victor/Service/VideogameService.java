@@ -1,5 +1,7 @@
 package es.Victor.Service;
 
+import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
 
 import es.Victor.Assembler.VideogameAssembler;
@@ -12,7 +14,6 @@ public class VideogameService {
 
 	public void createNewVideogameFromRequest(HttpServletRequest req) {
 		Videogame videogame = VideogameAssembler.assembleVideogameFrom(req);
-
 		insertOrUpdate(videogame);
 	}
 
@@ -24,7 +25,12 @@ public class VideogameService {
 			repository.update(videogameFrom);
 		}
 	}
-
+	
+	public List<Videogame> listAllVideogame(){
+		return repository.searchAll();
+		
+	}
+	
 	public VideogameRepository getRepository() {
 		return repository;
 	}

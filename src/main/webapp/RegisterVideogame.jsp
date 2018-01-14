@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Alta Videojuego</title>
+<title>Register Videogame</title>
 </head>
 <body>
-	<form action="" method="post">
+	<form action="videogame" method="post">
 		<span>Title:</span> 
 		<input type="text" path="Title"/> <br/>
 		<span>Pegi:</span> 
